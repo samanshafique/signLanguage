@@ -38,26 +38,28 @@ class LiveTextScreenState extends State<LiveTextScreen> {
         appBar: _buildAppBar(context),
         body: SizedBox(
           width: double.maxFinite,
-          child: Column(
-            children: [
-              Container(
-                height: 20.v,
-                width: double.maxFinite,
-                decoration: BoxDecoration(
-                  color: appTheme.whiteA700,
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                Container(
+                  height: 20.v,
+                  width: double.maxFinite,
+                  decoration: BoxDecoration(
+                    color: appTheme.whiteA700,
+                  ),
                 ),
-              ),
-              SizedBox(height: 70.v),
-              _buildContrast(context),
-              SizedBox(height: 10.v),
-              _buildTitle(context),
-              SizedBox(height: 13.v),
-              _buildView(context),
-              SizedBox(height: 4.v),
-            ],
+                SizedBox(height: 70.v),
+                _buildContrast(context),
+                SizedBox(height: 10.v),
+                _buildTitle(context),
+                SizedBox(height: 13.v),
+                _buildView(context),
+                SizedBox(height: 4.v),
+              ],
+            ),
           ),
         ),
-        bottomNavigationBar: _buildBottomBar(context),
+        // bottomNavigationBar: _buildBottomBar(context),
       ),
     );
   }

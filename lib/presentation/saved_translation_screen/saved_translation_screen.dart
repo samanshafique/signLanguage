@@ -65,7 +65,6 @@ class SavedTranslationScreenState extends State<SavedTranslationScreen> {
             ],
           ),
         ),
-        bottomNavigationBar: _buildBottomBar(context),
       ),
     );
   }
@@ -201,13 +200,6 @@ class SavedTranslationScreenState extends State<SavedTranslationScreen> {
           ),
         ],
       ),
-    );
-  }
-
-  /// Section Widget
-  Widget _buildBottomBar(BuildContext context) {
-    return CustomBottomBar(
-      onChanged: (BottomBarEnum type) {},
     );
   }
 }

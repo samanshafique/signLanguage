@@ -49,7 +49,7 @@ class HomePageState extends State<HomePage> {
                     color: appTheme.whiteA700,
                   ),
                 ),
-                SizedBox(height: 62.v),
+                SizedBox(height: 20.v),
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(

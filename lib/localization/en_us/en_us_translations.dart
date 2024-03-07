@@ -21,12 +21,12 @@ final Map<String, String> enUs = {
   "msg_type_your_otp_here": "Type Your OTP Here",
   "msg_verify_your_phone": "Verify Your Phone",
   "msg_we_ve_send_you_the":
-      "We’ve send you the verification code on +233 *******53.",
+      "We’ve send you the verification code on registered number.",
 
   // Registered Screen
   "msg_successfully_registered": "Successfully Registered",
   "msg_your_phone_number":
-      "Your phone number has been successfully registered, sign in to continue",
+      "Your Profile has been successfully registered, sign in to continue",
 
   // Profile Setup Two Screen
   "lbl_location": "Location", "msg_search_selection": "Search Selection Field",
@@ -169,7 +169,7 @@ final Map<String, String> enUs = {
   "lbl_log_in": "Log in",
   "lbl_male": "Male",
   "lbl_manage_devices": "Manage Devices",
-  "lbl_muhammad_owais": "Muhammad Owais",
+  "lbl_muhammad_owais": "User Name",
   "lbl_name": "Name",
   "lbl_or2": "or ",
   "lbl_password": "Password",
@@ -231,7 +231,7 @@ final Map<String, String> enUs = {
   "msg_network_err": "Network Error",
   "msg_something_went_wrong": "Something Went Wrong!",
 
-	// Validation Error String
+  // Validation Error String
   "err_msg_please_enter_valid_email": "Please enter valid email",
   "err_msg_please_enter_valid_password": "Please enter valid password",
   "err_msg_please_enter_valid_text": "Please enter valid text",

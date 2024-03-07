@@ -57,16 +57,6 @@ class CustomPhoneNumber extends StatelessWidget {
               child: Row(
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(
-                      left: 16.h,
-                      top: 14.v,
-                      bottom: 14.v,
-                    ),
-                    child: CountryPickerUtils.getDefaultFlagImage(
-                      country,
-                    ),
-                  ),
-                  Padding(
                     padding: EdgeInsets.fromLTRB(11.h, 20.v, 10.h, 20.v),
                     child: CountryPickerUtils.getDefaultFlagImage(
                       country,

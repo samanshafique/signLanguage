@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'core/app_export.dart';
+import 'presentation/home_container_screen/home_container_screen.dart';
+import 'presentation/login_screen/login_screen.dart';
 
 var globalMessengerKey = GlobalKey<ScaffoldMessengerState>();
 void main() {
@@ -42,8 +44,8 @@ class MyApp extends StatelessWidget {
                     '',
                   ),
                 ],
-                initialRoute: AppRoutes.initialRoute,
-                routes: AppRoutes.routes,
+                // initialRoute: AppRoutes.initialRoute,
+                // routes: AppRoutes.routes,
               );
             },
           ),

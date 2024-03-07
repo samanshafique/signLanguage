@@ -5,48 +5,10 @@ import '../presentation/login_screen/login_screen.dart';
 import '../presentation/signup_two_screen/signup_two_screen.dart';
 import '../presentation/otp_screen/otp_screen.dart';
 import '../presentation/registered_screen/registered_screen.dart';
-import '../presentation/profile_setup_two_screen/profile_setup_two_screen.dart';
-import '../presentation/forget_password_screen/forget_password_screen.dart';
-import '../presentation/recover_password_screen/recover_password_screen.dart';
-import '../presentation/reset_password_screen/reset_password_screen.dart';
-import '../presentation/password_changed_screen/password_changed_screen.dart';
 import '../presentation/home_container_screen/home_container_screen.dart';
-import '../presentation/learn_one_screen/learn_one_screen.dart';
-import '../presentation/learn_screen/learn_screen.dart';
-import '../presentation/video_screen/video_screen.dart';
 import '../presentation/live_translation_screen/live_translation_screen.dart';
 import '../presentation/live_text_screen/live_text_screen.dart';
-import '../presentation/live_text_speech_one_screen/live_text_speech_one_screen.dart';
-import '../presentation/live_text_speech_screen/live_text_speech_screen.dart';
-import '../presentation/profile_setup_one_screen/profile_setup_one_screen.dart';
-import '../presentation/profile_setup_screen/profile_setup_screen.dart';
-import '../presentation/language_screen/language_screen.dart';
-import '../presentation/help_faq_screen/help_faq_screen.dart';
-import '../presentation/support_screen/support_screen.dart';
-import '../presentation/saved_screen/saved_screen.dart';
 import '../presentation/saved_translation_screen/saved_translation_screen.dart';
-import '../presentation/query_successfully_screen/query_successfully_screen.dart';
-import '../presentation/splash1_screen/splash1_screen.dart';
-import '../presentation/login_in_screen/login_in_screen.dart';
-import '../presentation/add_device_screen/add_device_screen.dart';
-import '../presentation/otp1_screen/otp1_screen.dart';
-import '../presentation/device_manage_screen/device_manage_screen.dart';
-import '../presentation/device_manage_one_screen/device_manage_one_screen.dart';
-import '../presentation/splash_one_screen/splash_one_screen.dart';
-import '../presentation/otp_screen_one_screen/otp_screen_one_screen.dart';
-import '../presentation/welcome_screen/welcome_screen.dart';
-import '../presentation/device_add_screen/device_add_screen.dart';
-import '../presentation/welcome_screen_one_screen/welcome_screen_one_screen.dart';
-import '../presentation/welcome_screen_two_screen/welcome_screen_two_screen.dart';
-import '../presentation/otp_screen_two_screen/otp_screen_two_screen.dart';
-import '../presentation/sign_up_screen/sign_up_screen.dart';
-import '../presentation/device_add_one_screen/device_add_one_screen.dart';
-import '../presentation/add_device_one_screen/add_device_one_screen.dart';
-import '../presentation/sign_up_one_screen/sign_up_one_screen.dart';
-import '../presentation/login_in_one_screen/login_in_one_screen.dart';
-import '../presentation/welcome_screen_three_screen/welcome_screen_three_screen.dart';
-import '../presentation/otp_screen_three_screen/otp_screen_three_screen.dart';
-import '../presentation/app_navigation_screen/app_navigation_screen.dart';
 
 class AppRoutes {
   static const String splashScreen = '/splash_screen';
@@ -153,53 +115,27 @@ class AppRoutes {
 
   static Map<String, WidgetBuilder> get routes => {
         splashScreen: SplashScreen.builder,
+        //!-----1 Screen
         signupEmailScreen: SignupEmailScreen.builder,
-        loginScreen: LoginScreen.builder,
+        //!-----2 Screen
         signupTwoScreen: SignupTwoScreen.builder,
+        //!-----3 Screen
+        loginScreen: LoginScreen.builder,
+        //!-----4 Screen
         otpScreen: OtpScreen.builder,
+        //!-----5 Screen
         registeredScreen: RegisteredScreen.builder,
-        profileSetupTwoScreen: ProfileSetupTwoScreen.builder,
-        forgetPasswordScreen: ForgetPasswordScreen.builder,
-        recoverPasswordScreen: RecoverPasswordScreen.builder,
-        resetPasswordScreen: ResetPasswordScreen.builder,
-        passwordChangedScreen: PasswordChangedScreen.builder,
+        // profileSetupTwoScreen: ProfileSetupTwoScreen.builder,
+        // forgetPasswordScreen: ForgetPasswordScreen.builder,
+        // recoverPasswordScreen: RecoverPasswordScreen.builder,
+        // resetPasswordScreen: ResetPasswordScreen.builder,
+        // passwordChangedScreen: PasswordChangedScreen.builder,
         homeContainerScreen: HomeContainerScreen.builder,
-        learnOneScreen: LearnOneScreen.builder,
-        learnScreen: LearnScreen.builder,
-        videoScreen: VideoScreen.builder,
+
         liveTranslationScreen: LiveTranslationScreen.builder,
         liveTextScreen: LiveTextScreen.builder,
-        liveTextSpeechOneScreen: LiveTextSpeechOneScreen.builder,
-        liveTextSpeechScreen: LiveTextSpeechScreen.builder,
-        profileSetupOneScreen: ProfileSetupOneScreen.builder,
-        profileSetupScreen: ProfileSetupScreen.builder,
-        languageScreen: LanguageScreen.builder,
-        helpFaqScreen: HelpFaqScreen.builder,
-        supportScreen: SupportScreen.builder,
-        savedScreen: SavedScreen.builder,
         savedTranslationScreen: SavedTranslationScreen.builder,
-        querySuccessfullyScreen: QuerySuccessfullyScreen.builder,
-        splash1Screen: Splash1Screen.builder,
-        loginInScreen: LoginInScreen.builder,
-        addDeviceScreen: AddDeviceScreen.builder,
-        otp1Screen: Otp1Screen.builder,
-        deviceManageScreen: DeviceManageScreen.builder,
-        deviceManageOneScreen: DeviceManageOneScreen.builder,
-        splashOneScreen: SplashOneScreen.builder,
-        otpScreenOneScreen: OtpScreenOneScreen.builder,
-        welcomeScreen: WelcomeScreen.builder,
-        deviceAddScreen: DeviceAddScreen.builder,
-        welcomeScreenOneScreen: WelcomeScreenOneScreen.builder,
-        welcomeScreenTwoScreen: WelcomeScreenTwoScreen.builder,
-        otpScreenTwoScreen: OtpScreenTwoScreen.builder,
-        signUpScreen: SignUpScreen.builder,
-        deviceAddOneScreen: DeviceAddOneScreen.builder,
-        addDeviceOneScreen: AddDeviceOneScreen.builder,
-        signUpOneScreen: SignUpOneScreen.builder,
-        loginInOneScreen: LoginInOneScreen.builder,
-        welcomeScreenThreeScreen: WelcomeScreenThreeScreen.builder,
-        otpScreenThreeScreen: OtpScreenThreeScreen.builder,
-        appNavigationScreen: AppNavigationScreen.builder,
+
         initialRoute: SplashScreen.builder
       };
 }

@@ -1,4 +1,4 @@
-package com.signvox.app
+package com.fypapp.signvox
 
 import io.flutter.embedding.android.FlutterActivity
 

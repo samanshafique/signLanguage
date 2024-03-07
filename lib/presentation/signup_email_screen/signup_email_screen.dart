@@ -142,6 +142,11 @@ class SignupEmailScreenState extends State<SignupEmailScreen> {
               _buildLineOne(context),
               SizedBox(height: 26.v),
               CustomElevatedButton(
+                onPressed: () {
+                  NavigatorService.pushNamed(
+                    AppRoutes.signupTwoScreen,
+                  );
+                },
                 text: "msg_signup_with_email".tr,
                 margin: EdgeInsets.symmetric(horizontal: 16.h),
               ),
@@ -158,24 +163,31 @@ class SignupEmailScreenState extends State<SignupEmailScreen> {
                       style: CustomTextStyles.bodyLargeDubaiGray900,
                     ),
                   ),
-                  Padding(
-                    padding: EdgeInsets.only(left: 8.h),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          "lbl_log_in".tr,
-                          style: CustomTextStyles.bodyLargeDubaiLightblueA700,
-                        ),
-                        SizedBox(height: 2.v),
-                        Container(
-                          height: 1.v,
-                          width: 40.h,
-                          decoration: BoxDecoration(
-                            color: appTheme.lightBlueA700,
+                  GestureDetector(
+                    onTap: () {
+                      NavigatorService.pushNamed(
+                        AppRoutes.loginScreen,
+                      );
+                    },
+                    child: Padding(
+                      padding: EdgeInsets.only(left: 8.h),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "lbl_log_in".tr,
+                            style: CustomTextStyles.bodyLargeDubaiLightblueA700,
                           ),
-                        ),
-                      ],
+                          SizedBox(height: 2.v),
+                          Container(
+                            height: 1.v,
+                            width: 40.h,
+                            decoration: BoxDecoration(
+                              color: appTheme.lightBlueA700,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ],

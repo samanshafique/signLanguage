@@ -51,7 +51,7 @@ class CustomPinCodeTextField extends StatelessWidget {
         inputFormatters: [
           FilteringTextInputFormatter.digitsOnly,
         ],
-        enableActiveFill: true,
+        // enableActiveFill: true,
         pinTheme: PinTheme(
           fieldHeight: 50.h,
           fieldWidth: 46.h,

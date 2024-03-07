@@ -63,7 +63,7 @@ class RegisteredScreenState extends State<RegisteredScreen> {
               ),
               SizedBox(height: 27.v),
               SizedBox(
-                width: 237.h,
+                // width: 237.h,
                 child: Text(
                   "msg_successfully_registered".tr,
                   maxLines: 1,
@@ -74,25 +74,22 @@ class RegisteredScreenState extends State<RegisteredScreen> {
                 ),
               ),
               SizedBox(height: 26.v),
-              Container(
-                width: 344.h,
-                margin: EdgeInsets.only(
-                  left: 24.h,
-                  right: 23.h,
-                ),
-                child: Text(
-                  "msg_your_phone_number".tr,
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                  textAlign: TextAlign.center,
-                  style:
-                      CustomTextStyles.titleLargeDubaiGray60002Medium.copyWith(
-                    height: 1.60,
-                  ),
+              Text(
+                "msg_your_phone_number".tr,
+                maxLines: 3,
+                overflow: TextOverflow.ellipsis,
+                textAlign: TextAlign.center,
+                style: CustomTextStyles.titleLargeDubaiGray60002Medium.copyWith(
+                  height: 1.60,
                 ),
               ),
               SizedBox(height: 43.v),
               CustomElevatedButton(
+                onPressed: () {
+                  NavigatorService.pushNamed(
+                    AppRoutes.loginScreen,
+                  );
+                },
                 text: "lbl_sign_in".tr,
                 margin: EdgeInsets.symmetric(horizontal: 16.h),
               ),

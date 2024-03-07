@@ -18,6 +18,13 @@ dependencies:
   country_pickers: ^2.0.0
   sms_autofill: ^2.3.0
   intl: ^0.18.0
+  fluttertoast: ^8.0.8
+  change_app_package_name: ^1.1.0
+  flutter_app_name: ^0.1.1
+
+flutter_app_name:
+  name: "SignVox"
+
 dev_dependencies: 
   flutter_test: 
     sdk: flutter

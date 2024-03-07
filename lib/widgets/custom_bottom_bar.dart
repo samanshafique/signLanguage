@@ -19,13 +19,13 @@ class CustomBottomBarState extends State<CustomBottomBar> {
       icon: ImageConstant.imgUser,
       activeIcon: ImageConstant.imgUser,
       title: "lbl_live".tr,
-      type: BottomBarEnum.Live,
+      type: BottomBarEnum.Home,
     ),
     BottomMenuModel(
       icon: ImageConstant.imgBookmarkIndigo200,
       activeIcon: ImageConstant.imgBookmarkIndigo200,
       title: "lbl_live".tr,
-      type: BottomBarEnum.Live,
+      type: BottomBarEnum.Bookmark,
     ),
     BottomMenuModel(
       icon: ImageConstant.imgVector135,
@@ -37,13 +37,13 @@ class CustomBottomBarState extends State<CustomBottomBar> {
       icon: ImageConstant.imgNavLive,
       activeIcon: ImageConstant.imgNavLive,
       title: "lbl_live".tr,
-      type: BottomBarEnum.Live,
+      type: BottomBarEnum.News,
     ),
     BottomMenuModel(
       icon: ImageConstant.imgLockIndigo200,
       activeIcon: ImageConstant.imgLockIndigo200,
       title: "lbl_live".tr,
-      type: BottomBarEnum.Live,
+      type: BottomBarEnum.Profile,
     )
   ];
 
@@ -75,29 +75,12 @@ class CustomBottomBarState extends State<CustomBottomBar> {
               width: 24.adaptSize,
               color: appTheme.indigo200,
             ),
-            activeIcon: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                SizedBox(
-                  width: 13.h,
-                  child: Text(
-                    bottomMenuList[index].title ?? "",
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    textAlign: TextAlign.center,
-                    style: CustomTextStyles.labelSmallWhiteA700.copyWith(
-                      color: appTheme.whiteA700,
-                    ),
-                  ),
-                ),
-                CustomImageView(
-                  imagePath: bottomMenuList[index].activeIcon,
-                  height: 21.v,
-                  width: 27.h,
-                  color: appTheme.indigo200,
-                  margin: EdgeInsets.only(left: 59.h),
-                ),
-              ],
+            activeIcon: CustomImageView(
+              imagePath: bottomMenuList[index].activeIcon,
+              height: 30.v,
+              // width: 27.h,
+              color: appTheme.whiteA700,
+              // margin: EdgeInsets.only(left: 59.h),
             ),
             label: '',
           );
@@ -112,9 +95,7 @@ class CustomBottomBarState extends State<CustomBottomBar> {
   }
 }
 
-enum BottomBarEnum {
-  Live,
-}
+enum BottomBarEnum { Home, Bookmark, Live, News, Profile }
 
 class BottomMenuModel {
   BottomMenuModel({

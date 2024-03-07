@@ -190,7 +190,7 @@ class ProfileSetupScreenState extends State<ProfileSetupScreen> {
             ),
           ),
         ),
-        bottomNavigationBar: _buildBottomBar(context),
+        // bottomNavigationBar: _buildBottomBar(context),
       ),
     );
   }

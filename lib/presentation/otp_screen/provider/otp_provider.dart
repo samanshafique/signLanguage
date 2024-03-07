@@ -8,7 +8,7 @@ import '../models/otp_model.dart';
 /// current otpModelObj
 class OtpProvider extends ChangeNotifier {
   TextEditingController otpController = TextEditingController();
-
+  String otpPinCode = '0';
   OtpModel otpModelObj = OtpModel();
 
   @override

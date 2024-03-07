@@ -19,9 +19,9 @@ class SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(milliseconds: 3000), () {
+    Future.delayed(const Duration(milliseconds: 4000), () {
       NavigatorService.popAndPushNamed(
-        AppRoutes.loginScreen,
+        AppRoutes.signupEmailScreen,
       );
     });
   }
@@ -80,7 +80,7 @@ class SplashScreenState extends State<SplashScreen> {
                   SizedBox(
                       width: 262.h,
                       child: Text("msg_building_bridges".tr,
-                          maxLines: 2,
+                          maxLines: 5,
                           overflow: TextOverflow.ellipsis,
                           textAlign: TextAlign.center,
                           style: CustomTextStyles.titleMediumGray900Bold)),
